@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2e2e2e;
+            margin: 0;
+            overflow-y: scroll;
+        }
+        /* hero section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 25%;
+        }
+        .hero img {
+            height: 300px;
+            margin-right: 100px;
+        }
+        .introduction h1 {
+            color: white;
+            font-family: 'Arimo', sans-serif;
+            font-weight: 200;
+            font-size: 54px;
+            margin-bottom: 10px;
+        }
+        .introduction h2 {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .titles {
+            display: flex;
+            gap: 30px;
+        }
+        .titles h3 {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 19px;
+        }
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+            }
+            .hero img {
+                height: 150px;
+                margin: 0;
+                padding-right: 25%;
+            }
+        }
+        /* about me section */
+        .about-me {
+            height: 100vh;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 100vh;
+            gap: 5px;
+        }
+        .profile-pic {
+            background-color: #2e2e2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-pic img {
+            height: 200px;
+            border-radius: 50%;
+        }
+        .profile-pic h2 {
+            color: white;
+            font-family: 'Arimo', sans-serif;
+            font-weight: 200;
+            font-size: 46px;
+        }
+        .paragraphs {
+            background-color: #2e2e2e;
+            padding-left: 35px;
+            padding-right: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .paragraphs p {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 24px;
+        }
+        @media (max-width: 992px) {
+            .about-me {
+                display: flex;
+                flex-direction: column;
+                gap: 80px;
+                background-color: #2e2e2e;
+            }
+        }
+        /* projects section */
+        .projects-section {
+            height: 100vh;
+        }
+        .projects {
+            display: flex;
+            height: 95vh;
+            justify-content: space-evenly;
+        }
+        .projects img {
+            width: 150px;
+        }
+        .img-border {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        .project-border {
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            border: 10px white solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .projects h3 {
+            color: white;
+            font-family: 'Arimo', sans-serif;
+            font-weight: 100;
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+        .footer {
+            height: 5vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #d9d9d9;
+        }
+        .footer h4 {
+            color: #2e2e2e;
+            font-family: 'Arimo', sans-serif;
+            font-weight: 100;
+            font-size: 18px;
+        }
+        @media (max-width: 992px) {
+            .projects {
+                flex-direction: column;
+            }
+        }
+        p {
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="assets/images/logo.png">
+            <div class="introduction">
+                <h1>hello world!</h1>
+                <h2>my name is dominik</h2>
+                <div class="titles">
+                    <h3><u>web developer</u></h3>
+                    <h3><u>software engineer</u></h3>
+                    <h3><u>data analyst</u></h3>
+                </div>
+            </div>
+    </div>
+
+    <div class="about-me">
+        <div class="profile-pic">
+            <h2>about me</h2>
+            <img src="assets/images/profile-pic.jpg">
+        </div>
+        <div class="paragraphs">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam auctor felis, vitae hendrerit ipsum luctus ut. Donec quis metus a nulla porta lobortis in eget est. In risus leo, interdum a tellus quis, lacinia ultricies dolor. Ut suscipit sapien sed magna facilisis sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p>Praesent vulputate, nisl eu tristique fringilla, tellus risus pharetra ipsum, in pellentesque tortor lectus sed massa. Ut sit amet ipsum at risus vulputate dapibus quis vitae lectus. Nullam aliquam ac dui et iaculis. Nullam purus metus, pulvinar et maximus vitae, auctor nec tortor. Donec imperdiet tellus tortor, ut vulputate nunc malesuada eu. Sed et lectus tortor.</p>
+        </div>
+    </div>
+
+    <div class="projects-section">
+        <div class="projects">
+            <div class="project">
+                <div class="project-border">
+                    <div class="img-border"><img src="assets/images/tic-tac-toe.webp"></div>
+                    <h3>tic-tac-toe</h3>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-border">
+                    <div class="img-border"><img src="assets/images/chess.webp"></div>
+                    <h3>chess ai</h3>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-border">
+                    <div class="img-border"><img src="assets/images/rock-paper-scissors.webp"></div>
+                    <h3>rock-paper-scissors</h3>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>LinkedIn</h4>
+            <h4>Twitter</h4>
+            <h4>GitHub</h4>
+            <h4>Facebook</h4>
+        </div>
+    </div>
+</body>
+</html>
